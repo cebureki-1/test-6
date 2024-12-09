@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1
+
+        const school = {
+            name: "Amjilecyber_school",
+            phoneNumber: "8-707-808-808",
+            students: [
+                { studentname: "aian-1", top: "IT 24/8, english 24/8, math", progress: 90, lessons: 2 },
+                { studentname: "aian-2", top: "IT 24/8, english 24/9, math", progress: 90, lessons: 3 },
+                { studentname: "aian-3", top: "IT 24/7, english 24/4, math", progress: 90, lessons: 6 },
+                { studentname: "aian-4", top: "IT 24/7, english 24/7, math", progress: 90, lessons: 1 },
+                { studentname: "aian-5", top: "IT 24/7, english 24/4, math", progress: 90, lessons: 4 },
+            ],
+            //2
+            changeSchoolName: function(a){
+                let changeSchool = prompt("jana name");
+                return a.name = changeSchool   
+            },
+            //3
+            changePhoneNumber: function(a){
+                let changePhone = prompt("jana number");
+                return a.phoneNumber = changePhone;
+            },
+            //4
+            listStudentNames: function(a){
+                return a.students.forEach(a => {
+                    alert(a.studentname)
+                });
+            },
+            //5
+            addStudent: function(a){
+                let studentname1 = prompt("adamnin ati")
+                let top1 = prompt("IT 24 => 7/8")
+                let progress1 = +prompt("0-100")
+                let lessons1 = +prompt("1-7")
+                return a[6] = {studentname: studentname1, top: top1, progress: progress1, lessons: lessons1};
+            },
+            //6
+            applyDecreaseToTop: function (a) {
+                let topti = +prompt(" 24 => \n 7 немесе 8")
+                let procent = +prompt("kansa projenke asaitasun")
+                if(topti === 7 ){
+                    
+                }
+            },
+
+
+
+
+        }
+        school.changeSchoolName(school)
+        school.changePhoneNumber(school)
+        school.listStudentNames(school)
+        school.addStudent(school.students) 
+        school.applyDecreaseToTop(school.students)
+        console.log(school);
+
+    </script>
+</body>
+
+</html>
